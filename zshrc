@@ -91,3 +91,9 @@ export PATH="$PATH:$HOME/.local/bin"
 alias s='ls'
 alias show='du -h --max-depth=1'
 alias -g gp=' | grep'
+alias LOG='less /var/log/messages'
+alias show='du -h --max-depth=2'
+alias dropcache='echo 3 >/proc/sys/vm/drop_caches'
+alias -s c=vim
+alias -s h=vim
+hash -d phchang=/home/phchang

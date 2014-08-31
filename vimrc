@@ -16,6 +16,7 @@ colorscheme peachpuff
 nnoremap <silent> <F5> :NERDTree<CR>
 map <S-l> :tabn<CR>
 map <S-k> :tabp<CR>
+vmap // y/<C-R>"<CR>  
 syntax on
 
 set ts=4
@@ -23,6 +24,6 @@ set sw=4
 set softtabstop=4
 set expandtab
 
-" for powerline
+" for powerline , Don't forget to install vim-airline
 set laststatus=2
 let g:airline_powerline_fonts = 1
