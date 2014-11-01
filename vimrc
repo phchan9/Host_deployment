@@ -3,6 +3,8 @@ set incsearch
 set autoindent
 set ruler
 set showmode
+set cursorline
+set autoread
 set nu
 set t_Co=256
 
@@ -24,6 +26,6 @@ set sw=4
 set softtabstop=4
 set expandtab
 
-" for powerline , Don't forget to install vim-airline
+" for powerline
 set laststatus=2
 let g:airline_powerline_fonts = 1

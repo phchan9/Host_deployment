@@ -51,7 +51,7 @@ ZSH_THEME="candy"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git debian)
+plugins=(git debian vagrant)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -60,9 +60,12 @@ source $ZSH/oh-my-zsh.sh
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 # ========for powerline
 export PATH="$PATH:$HOME/.local/bin"
+# ========for sikuli
+export JAVA_AWT_LIBRARY="/usr/lib/jvm/java-1.7.0-openjdk-amd64/jre/lib/amd64"
+export JAVA_JVM_LIBRARY="/usr/lib/jvm/java-1.7.0-openjdk-amd64"
+export JAVA_HOME="/usr/lib/jvm/java-1.7.0-openjdk-amd64"
 
-
-# export MANPATH="/usr/local/man:$MANPATH"
+ export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -90,10 +93,13 @@ export PATH="$PATH:$HOME/.local/bin"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias s='ls'
 alias show='du -h --max-depth=1'
-alias -g gp=' | grep'
 alias LOG='less /var/log/messages'
+alias -g gp=' | grep -i'
 alias show='du -h --max-depth=2'
 alias dropcache='echo 3 >/proc/sys/vm/drop_caches'
 alias -s c=vim
 alias -s h=vim
 hash -d phchang=/home/phchang
+hash -d sikulix=/home/phchang/Documents/SikuliX-2014
+alias open='xdg-open'
+alias lhead="ls -lt |head"
